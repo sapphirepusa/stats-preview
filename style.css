@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    background-color:hsl(233, 47%, 7%)
+}
+
+body {
+    color: white;
+}
+
+.container {
+    min-height: 100dvh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+    font-family: "Lexend Deca", system-ui;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 30rem;
+    height: 40rem;
+
+}
