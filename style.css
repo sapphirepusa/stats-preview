@@ -34,10 +34,13 @@ h1 {
     width: 69.313rem;
     min-height: 27.813rem;
     text-wrap:wrap;
+    border-radius: 0.625rem;
 }
 
 
 .img {
     min-height: 27.813rem;
     width: 33.688rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
