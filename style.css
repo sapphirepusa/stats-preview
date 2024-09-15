@@ -7,25 +7,40 @@
 
 body {
     color: white;
+    font-size: 0.938rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    letter-spacing: 0.063rem;
 }
 
 .container {
-    min-height: 100dvh;
-    width: 100vh;
+    min-height: 100svh;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.text-content {
+.container-content {
     font-family: "Lexend Deca", system-ui;
     background-color: hsl(244, 38%, 16%);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 30rem;
-    height: 40rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 69.313rem;
+    min-height: 27.813rem;
+    text-wrap:wrap;
+    border-radius: 0.625rem;
+}
 
+
+.img {
+    min-height: 27.813rem;
+    width: 33.688rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
