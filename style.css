@@ -19,6 +19,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: auto;
+    margin: auto;
 }
 
 .container-content {
@@ -53,11 +55,12 @@ h1 {
 
 .statement {
     font-size: 0.938rem;
-    font-weight: 150;
-    width: 20.688rem;
+    font-weight: 300;
+    width: 21.688rem;
     line-height: 1.8;
     font-family: "Inter" system-ui;
     margin-bottom: 3.688rem;
+    color: hsla(0, 0%, 100%, 0.75);
 }
 
 .list-columns {
@@ -77,8 +80,25 @@ h1 {
 
 .text {
     font-size: 0.638rem;
-    font-weight: 150;
-    letter-spacing: 0.150rem;
+    font-weight: 300;
+    letter-spacing: 0.160rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.image-section {
+    position: relative;
+}
+
+.img-cover {
+    background-color: hsl(277, 79%, 28%);
+    min-height: 27.830rem;
+    width: 33.688rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
 }
 
 .img {
@@ -87,3 +107,18 @@ h1 {
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
 }
+
+@media only screen and (max-width: 700px) {
+    
+    body{
+        margin: 0;
+        padding: 0;
+        height: 0;
+        background-color: aqua;
+    }
+    .img{
+        background-color: aquamarine;
+    }
+    
+}
+
