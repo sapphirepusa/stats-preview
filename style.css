@@ -7,11 +7,6 @@ body {
     background-color:hsl(233, 47%, 7%)
 }
 
-h1 {
-    font-size: 2.25rem;
-    letter-spacing: 0.063rem;
-}
-
 .main-container {
    min-height: 100dvh;
    width: auto;
@@ -48,6 +43,8 @@ h1 {
     margin: 0;
     margin-bottom: 1.938rem;
     width: 27.188rem;
+    font-size: 2.25rem;
+    letter-spacing: 0.063rem;
 }
 
 .text-content span {
@@ -132,9 +129,6 @@ h1 {
         align-items: center;
     }
 
-    /* .image-section{
-        margin: 25rem 10rem 0 10rem;
-    } */
     
     .img, .img-cover {
         border-top-left-radius: 0.625rem;
@@ -148,6 +142,27 @@ h1 {
         border-bottom-left-radius: 0.625rem;
         border-bottom-right-radius: 0.625rem;
         border-top-left-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 33.700rem;
+    }
+
+    .list-columns{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-title{
+        text-align: center;
+        padding: 3rem 0 2rem 0;
+        margin: 0;
+       
+    }
+    .statement {
+        text-align: center;
     }
 }
 
