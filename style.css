@@ -7,18 +7,45 @@ body {
     background-color:hsl(233, 47%, 7%)
 }
 
+
 .main-container {
+    max-height: 100vw;
+    max-width: 100dvh;
+    position: fixed;
+    inset: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-content {
+    font-family: "Inter", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+    background-color: hsl(244, 38%, 16%);
+    /* width: 35.623rem;
+    height: 27.830rem; */
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    text-wrap: wrap;
+}
+
+/* .main-container {
    min-height: 100dvh;
    width: auto;
    display: flex;
    flex-direction: row;
    justify-content: center;
-   align-items: center;
-   margin: auto;
-   padding: auto;
-}
+   align-items: center; 
+} */
 
-.container-content {
+/* .container-content {
     font-family: "Inter", system-ui;
     display: flex;
     flex-direction: row;
@@ -104,65 +131,10 @@ body {
     width: 33.688rem;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
-}
+} */
 
 @media only screen and (max-width: 1000px) {
-    
-    body{
-        margin: 0;
-        padding: 0;
-        height: 0;
-        
-    }
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 15rem 10rem 10rem 10rem;
-    }
+     
 
-    .container-content {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
-    .img, .img-cover {
-        border-top-left-radius: 0.625rem;
-        border-top-right-radius: 0.625rem;
-        border-bottom-right-radius: 0;
-    }
-
-    .text-content {
-        margin: -0.290rem;
-        margin-bottom: 20rem;
-        border-bottom-left-radius: 0.625rem;
-        border-bottom-right-radius: 0.625rem;
-        border-top-left-radius: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        width: 33.700rem;
-    }
-
-    .list-columns{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .header-title{
-        text-align: center;
-        padding: 3rem 0 2rem 0;
-        margin: 0;
-       
-    }
-    .statement {
-        text-align: center;
-    }
 }
 
