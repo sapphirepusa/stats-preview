@@ -1,12 +1,16 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-body {
-    color: white;
-    font-size: 0.938rem;
-    background-color:hsl(233, 47%, 7%)
+ 
+body{
+    width: 100%;
+    height: 100%;
+    gap: 0;
+    background-color: hsl(233, 47%, 7%);
 }
 
+<<<<<<< Updated upstream
 h1 {
     font-size: 2.25rem;
     letter-spacing: 0.063rem;
@@ -87,24 +91,51 @@ h1 {
 }
 
 .image-section {
+=======
+.main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all .4s ease-in-out;
+}
+
+/* image section */
+.image-container {
+>>>>>>> Stashed changes
     position: relative;
 }
 
-.img-cover {
-    background-color: hsl(277, 79%, 28%);
-    min-height: 27.830rem;
+.image-card {
+    background-image: url("images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
     width: 33.688rem;
+    height: 27.830rem;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
+}
+
+.image-mask {
+    background-color: hsl(277, 79%, 28%);
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    opacity: 0.6;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.6;
 }
 
-.img {
-    min-height: 100%;
+/* content section  */
+
+.card-container {
+    font-family: "Inter";
+    background-color: hsl(244, 38%, 16%);
     width: 33.688rem;
+<<<<<<< Updated upstream
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
 }
@@ -149,5 +180,61 @@ h1 {
         border-bottom-right-radius: 0.625rem;
         border-top-left-radius: 0;
     }
+=======
+    height: 27.830rem;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+}
+
+.content-statement {
+    margin: 4.40rem 4.40rem 3rem 4.40rem;
+}
+
+section span {
+    color: hsl(277, 64%, 61%);
+}
+
+section h1 {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.063rem;
+    font-size: 2.25rem;
+}
+
+.paragraph-statement {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 200;
+    font-size: 0.938rem;
+    text-wrap: wrap;
+    line-height: 1.8;
+    margin-right: 4rem;
+}
+
+/* stats section */
+
+.stats {
+    margin: 1rem;
+}
+
+.stats-header {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.56rem;
+    margin: 0;
+}
+
+.stats-sub-heading {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.938rem;
+    margin: 0;
+}
+
+.stat-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items:center;
+    gap: 2.2rem;
+    margin-left:3.4rem;
+>>>>>>> Stashed changes
 }
 
