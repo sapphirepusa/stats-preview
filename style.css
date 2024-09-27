@@ -10,100 +10,16 @@ body{
     background-color: hsl(233, 47%, 7%);
 }
 
-<<<<<<< Updated upstream
-h1 {
-    font-size: 2.25rem;
-    letter-spacing: 0.063rem;
-}
-
-.main-container {
-   min-height: 100dvh;
-   width: auto;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   margin: auto;
-   padding: auto;
-}
-
-.container-content {
-    font-family: "Inter", system-ui;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    width: 35.623rem;
-    max-height: 27.830rem;
-    text-wrap:wrap;
-
-}
-
-.text-content {
-    background-color: hsl(244, 38%, 16%);
-    border-top-left-radius: 0.625rem;
-    border-bottom-left-radius: 0.625rem;
-    text-wrap: wrap;
-    padding: 4rem;
-}
-
-
-.header-title {
-    margin: 0;
-    margin-bottom: 1.938rem;
-    width: 27.188rem;
-}
-
-.text-content span {
-    color: hsl(277, 64%, 61%);
-}
-
-.statement {
-    font-size: 0.938rem;
-    font-weight: 300;
-    width: 21.688rem;
-    line-height: 1.8;
-    font-family: "Inter" system-ui;
-    margin-bottom: 3.688rem;
-    color: hsla(0, 0%, 100%, 0.75);
-}
-
-.list-columns {
-    display: flex;
-    flex-direction: row;
-}
-
-.list-columns p {
-    margin: 0 4.063rem 0.513rem 0;
-    padding: 0;
-}
-
-.num {
-    font-size: 1.563rem;
-    font-weight: 600;
-}
-
-.text {
-    font-size: 0.638rem;
-    font-weight: 300;
-    letter-spacing: 0.160rem;
-    color: hsla(0, 0%, 100%, 0.6);
-}
-
-.image-section {
-=======
 .main-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    transition: all .4s ease-in-out;
 }
 
 /* image section */
 .image-container {
->>>>>>> Stashed changes
     position: relative;
 }
 
@@ -135,52 +51,6 @@ h1 {
     font-family: "Inter";
     background-color: hsl(244, 38%, 16%);
     width: 33.688rem;
-<<<<<<< Updated upstream
-    border-top-right-radius: 0.625rem;
-    border-bottom-right-radius: 0.625rem;
-}
-
-@media only screen and (max-width: 1000px) {
-    
-    body{
-        margin: 0;
-        padding: 0;
-        height: 0;
-        
-    }
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 15rem 10rem 10rem 10rem;
-    }
-
-    .container-content {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* .image-section{
-        margin: 25rem 10rem 0 10rem;
-    } */
-    
-    .img, .img-cover {
-        border-top-left-radius: 0.625rem;
-        border-top-right-radius: 0.625rem;
-        border-bottom-right-radius: 0;
-    }
-
-    .text-content {
-        margin: -0.290rem;
-        margin-bottom: 20rem;
-        border-bottom-left-radius: 0.625rem;
-        border-bottom-right-radius: 0.625rem;
-        border-top-left-radius: 0;
-    }
-=======
     height: 27.830rem;
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
@@ -235,6 +105,8 @@ section h1 {
     align-items:center;
     gap: 2.2rem;
     margin-left:3.4rem;
->>>>>>> Stashed changes
 }
+
+
+
 
