@@ -15,18 +15,14 @@ body{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-/* image section */
-.image-container {
-    position: relative;
+    height: fit-content;
+    height: 100dvh;
 }
 
 .image-card {
     background-image: url("images/image-header-desktop.jpg");
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-position: center;
     width: 33.688rem;
     height: 27.830rem;
     border-top-right-radius: 0.625rem;
@@ -40,24 +36,22 @@ body{
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
     opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* content section  */
 
-.card-container {
+.sec-card-container {
     font-family: "Inter";
     background-color: hsl(244, 38%, 16%);
     width: 33.688rem;
-    height: 27.830rem;
+    min-height: 27.830rem;
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
+    height: fit-content;
 }
 
 .content-statement {
-    margin: 4.40rem 4.40rem 3rem 4.40rem;
+    margin: 4.40rem 5rem 3rem 4.40rem;
 }
 
 section span {
@@ -76,7 +70,8 @@ section h1 {
     font-size: 0.938rem;
     text-wrap: wrap;
     line-height: 1.8;
-    margin-right: 4rem;
+    text-align: start;
+    letter-spacing: 0.033rem;
 }
 
 /* stats section */
@@ -94,17 +89,67 @@ section h1 {
 
 .stats-sub-heading {
     color: hsla(0, 0%, 100%, 0.6);
-    font-size: 0.938rem;
-    margin: 0;
+    font-size: 0.817rem;
+    font-weight: 200;
+    margin-top: 0.27rem;
+    letter-spacing: 0.06rem;
 }
 
 .stat-details {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items:center;
-    gap: 2.2rem;
-    margin-left:3.4rem;
+    gap: 2.9rem;
+    /* margin-left:3.4rem; */
+    
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10rem 5rem 10rem 5rem;
+    }
+
+    .image-card {
+        background-image: url("./images/image-header-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        border-top-left-radius: 0.625rem;
+        border-bottom-right-radius: 0;
+    }
+
+    .image-mask {
+       opacity: 0.5;
+       height: 100%;
+       width: 100%;
+       border-top-left-radius: 0.625rem;
+       border-bottom-right-radius: 0;
+    }
+
+    .sec-card-container {
+        border-bottom-right-radius: 0.625rem;
+        border-top-left-radius: 0;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .paragraph-statement {
+        text-align: center;
+    }
+
+    .stat-details {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    
 }
 
 
