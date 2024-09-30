@@ -51,7 +51,7 @@ body{
 }
 
 .content-statement {
-    margin: 4.40rem 5rem 3rem 4.40rem;
+    margin: 4.40rem 4.40rem 3rem 4.40rem ;
 }
 
 section span {
@@ -98,11 +98,10 @@ section h1 {
 .stat-details {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: space-around; */
     align-items:center;
-    gap: 2.9rem;
-    /* margin-left:3.4rem; */
-    
+    margin: 0 3.5rem 0  3.5rem;
+    gap: 1.5rem;
 }
 
 
@@ -121,7 +120,7 @@ section h1 {
         background-repeat: no-repeat;
         background-position: bottom center;
         border-top-left-radius: 0.625rem;
-        border-bottom-right-radius: 0;
+        border-bottom-right-radius: 0;        
     }
 
     .image-mask {
@@ -136,20 +135,30 @@ section h1 {
         border-bottom-right-radius: 0.625rem;
         border-top-left-radius: 0;
         text-align: center;
-        height: fit-content;
+        height: auto;
+        min-height: 36.5rem;
+        width: auto;
+        min-width: 25rem;
     }
 
     .paragraph-statement {
         text-align: center;
+        /* margin: 0 2.5rem 0 2.5rem; */
+        font-size: 1rem;
+    }
+
+    .content-statement {
+        margin: 4.40rem 1.40rem 1.5rem 1.40rem ;
     }
 
     .stat-details {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 0;
+        margin: 0;
+        gap: 0;
+        
     }
-    
 }
 
 
