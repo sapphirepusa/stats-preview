@@ -2,57 +2,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
- 
-body{
-    width: 100%;
-    height: 100%;
-    gap: 0;
-    background-color: hsl(233, 47%, 7%);
+/* what's hjppening with this syntax?? */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* applied to both instead of using height: 100dvh, why? not sure*/
+html, body{
+    width: 100%;
+    height: 100%;
+}
+ 
+body{
+    min-height: 600px;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* works when changing the transition of the screen from full to responsive */
 .main-container {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     height: fit-content;
-    height: 100dvh;
+    width: 100%;
+    max-width: 120rem;
+    transition: all .4s ease-in-out;
+}
+
+/* helps show the image
+takes up half the size of the browser 
+use percentage so when adjusting screen size it also adjust the image*/
+.card-container {
+    width: 35rem;
+    max-width: 92.5rem;
+    height: 37.167rem;
+    display: flex;
+    border-radius: 0.833rem;
+    background-color: antiquewhite;
 }
 
 .image-card {
     background-image: url("images/image-header-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    width: 33.688rem;
-    height: 27.830rem;
-    border-top-right-radius: 0.625rem;
-    border-bottom-right-radius: 0.625rem;
+    background-position: center right;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0.625rem 0 0.625rem 0; */
 }
 
 .image-mask {
     background-color: hsl(277, 79%, 28%);
     width: 100%;
     height: 100%;
-    border-top-right-radius: 0.625rem;
-    border-bottom-right-radius: 0.625rem;
+    /* border-radius: 0 0.625rem 0.625rem 0; */
     opacity: 0.6;
 }
 
 /* content section  */
 
+/* used "order: -1" instead of flex-direction: row-reverse, why 
+pretty much does the same thing but not sure how it would effect in the long run*/
 .sec-card-container {
     font-family: "Inter";
     background-color: hsl(244, 38%, 16%);
-    width: 33.688rem;
-    min-height: 27.830rem;
-    border-top-left-radius: 0.625rem;
-    border-bottom-left-radius: 0.625rem;
-    height: fit-content;
+    width: 52%;
+    min-width: 39.583rem;
+    height: 100%;
+    border-radius: 0.625rem 0 0 0.625rem;
+    padding: 4.5rem;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
-.content-statement {
-    margin: 4.40rem 4.40rem 3rem 4.40rem ;
-}
+/* .content-statement {
+    margin: 1.40rem 1.40rem 1rem 1.40rem ;
+} */
 
 section span {
     color: hsl(277, 64%, 61%);
@@ -139,6 +172,7 @@ section h1 {
         min-height: 36.5rem;
         width: auto;
         min-width: 25rem;
+        order: 1;
     }
 
     .paragraph-statement {
@@ -157,7 +191,6 @@ section h1 {
         justify-content: center;
         margin: 0;
         gap: 0;
-        
     }
 }
 
