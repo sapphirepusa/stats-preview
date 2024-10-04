@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-/* what's hjppening with this syntax?? */
+/* CSS reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* applied to both instead of using height: 100dvh, why? not sure*/
+/* applied to both instead of using height: 100dvh, 
+not sure*/
+
 html, body{
     width: 100%;
     height: 100%;
 }
  
 body{
-    min-height: 600px;
+    min-height: 40rem;
     background-color: hsl(233, 47%, 7%);
     display: flex;
     justify-content: center;
@@ -30,7 +32,7 @@ body{
     align-items: center;
     height: fit-content;
     width: 100%;
-    max-width: 120rem;
+    max-width: 90rem;
     transition: all .4s ease-in-out;
 }
 
@@ -38,12 +40,12 @@ body{
 takes up half the size of the browser 
 use percentage so when adjusting screen size it also adjust the image*/
 .card-container {
-    width: 35rem;
-    max-width: 92.5rem;
-    height: 37.167rem;
+    width: 95%;
+    max-width: 69.375rem;
+    height: 27.5rem;
     display: flex;
+    flex-direction: row-reverse;
     border-radius: 0.833rem;
-    background-color: antiquewhite;
 }
 
 .image-card {
@@ -51,16 +53,16 @@ use percentage so when adjusting screen size it also adjust the image*/
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
-    width: 100%;
+    width: 49%;
     height: 100%;
-    /* border-radius: 0.625rem 0 0.625rem 0; */
+    border-radius: 0 0.625rem 0.625rem 0;
 }
 
 .image-mask {
-    background-color: hsl(277, 79%, 28%);
+    background-color: hsla(277, 93%, 33%, 0.801);
     width: 100%;
     height: 100%;
-    /* border-radius: 0 0.625rem 0.625rem 0; */
+    border-radius: 0 0.625rem 0.625rem 0;
     opacity: 0.6;
 }
 
@@ -69,23 +71,20 @@ use percentage so when adjusting screen size it also adjust the image*/
 /* used "order: -1" instead of flex-direction: row-reverse, why 
 pretty much does the same thing but not sure how it would effect in the long run*/
 .sec-card-container {
-    font-family: "Inter";
+    font-family: "Inter" ,system-ui;
     background-color: hsl(244, 38%, 16%);
-    width: 52%;
-    min-width: 39.583rem;
+    width: 50%;
+    min-width: 29.688rem;
     height: 100%;
     border-radius: 0.625rem 0 0 0.625rem;
-    padding: 4.5rem;
-    order: -1;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
 }
 
-/* .content-statement {
-    margin: 1.40rem 1.40rem 1rem 1.40rem ;
-} */
+.content-statement {
+    margin: 1.9rem;
+}
 
 section span {
     color: hsl(277, 64%, 61%);
@@ -94,105 +93,115 @@ section span {
 section h1 {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
-    font-size: 2.25rem;
+    font-size: 2.2rem;
 }
 
 .paragraph-statement {
     color: hsla(0, 0%, 100%, 0.75);
     font-weight: 200;
-    font-size: 0.938rem;
+    font-size: 0.878rem;
     text-wrap: wrap;
     line-height: 1.8;
     text-align: start;
     letter-spacing: 0.033rem;
+    margin: 1.5rem 3rem 4rem 0;
 }
 
-/* stats section */
-
-.stats {
-    margin: 1rem;
+.stat-details {
+    display: flex;
+    gap: 3.9rem;
 }
 
 .stats-header {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
-    font-size: 1.56rem;
+    font-size: 1.5rem;
     margin: 0;
+    padding: 0;
 }
 
 .stats-sub-heading {
     color: hsla(0, 0%, 100%, 0.6);
-    font-size: 0.817rem;
-    font-weight: 200;
+    font-size: 0.8rem;
+    font-weight: 300;
     margin-top: 0.27rem;
-    letter-spacing: 0.06rem;
+    font-family: "Lexend Deca", system-ui;
+
 }
 
-.stat-details {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    align-items:center;
-    margin: 0 3.5rem 0  3.5rem;
-    gap: 1.5rem;
+@media only screen and (max-width: 1050px) {
+    .paragraph-statement {
+        margin: 1.5rem 3rem 2rem 0;
+    }
 }
-
 
 @media only screen and (max-width: 850px) {
 
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    body {
+        height: 100%;
+        min-height: 56rem;
+    }
+
+    .main-container{
+        height: 100%;
+        width: 30rem;
         justify-content: center;
-        margin: 10rem 5rem 10rem 5rem;
+        padding: 2rem;
     }
 
-    .image-card {
-        background-image: url("./images/image-header-mobile.jpg");
+    .card-container {
+        min-height: 100%;
+        width: 89%;
+        flex-direction: column;
+    }
+
+    .image-card{
+        background-image: url("images/image-header-mobile.jpg");
         background-repeat: no-repeat;
-        background-position: bottom center;
-        border-top-left-radius: 0.625rem;
-        border-bottom-right-radius: 0;        
+        background-position: left center;
+        background-size: cover;
+        min-width: 100%;
+        height: 20rem;
+        border-radius: 0.625rem 0.625rem 0 0;
     }
 
-    .image-mask {
-       opacity: 0.5;
-       height: 100%;
-       width: 100%;
-       border-top-left-radius: 0.625rem;
-       border-bottom-right-radius: 0;
+    .image-mask{
+        border-radius: 0.625rem 0.625rem 0 0;
     }
 
     .sec-card-container {
-        border-bottom-right-radius: 0.625rem;
-        border-top-left-radius: 0;
+        border-radius: 0 0 0.625rem 0.625rem;
+        min-width: 100%;
+        min-height: 39.5rem;
+        padding: 0;
         text-align: center;
-        height: auto;
-        min-height: 36.5rem;
-        width: auto;
-        min-width: 25rem;
-        order: 1;
+    }
+
+    section h1 {
+        margin: 1rem 0 2rem 0;
     }
 
     .paragraph-statement {
-        text-align: center;
-        /* margin: 0 2.5rem 0 2.5rem; */
-        font-size: 1rem;
-    }
-
-    .content-statement {
-        margin: 4.40rem 1.40rem 1.5rem 1.40rem ;
+        text-align:center;
+        margin: 0 1rem 0 1rem;
+        font-size: 0.9rem;
     }
 
     .stat-details {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        gap: 0;
+        gap: 1.8rem;
+        margin-top: 2rem;
     }
+
+    .stats-header {
+        font-size: 1.5rem;
+    }
+
+    
+
 }
+
+
 
 
 
